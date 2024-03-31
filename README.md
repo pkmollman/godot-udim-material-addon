@@ -13,6 +13,10 @@
 This addon tries to replicate most of the provided options from the StandardMaterial3D resource.
 Much of the options are still being tested and built. If you have need of a particular material feature, please create an issue.
 
+UDIMShaderMaterial only supportes up through UDIM tile id 1030.
+This can expand in the future.
+Keep in mind however that low end platforms like web or mobile (basically anything not using the Vulkan renderer) only support up to 12-32 textures to a shader.
+
 ### List of features that appear to be working, the rest are a work in progress
 - Albedo Tileset
 - Albedo Color

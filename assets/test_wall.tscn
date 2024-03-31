@@ -24,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://lbi3is2c1adr" path="res://assets/test_wall_textures/albedo.1019.png" id="21_2ntld"]
 [ext_resource type="Texture2D" uid="uid://cyeekg4i7omq4" path="res://assets/test_wall_textures/albedo.1020.png" id="22_3mgpj"]
 
-[sub_resource type="Resource" id="Resource_rvq8g"]
+[sub_resource type="Resource" id="Resource_4yxbi"]
 script = ExtResource("2_3jytj")
 tile_1001 = ExtResource("3_pqaql")
 tile_1002 = ExtResource("4_0c1c2")
@@ -47,7 +47,7 @@ tile_1018 = ExtResource("20_ignq0")
 tile_1019 = ExtResource("21_2ntld")
 tile_1020 = ExtResource("22_3mgpj")
 
-[sub_resource type="Shader" id="Shader_52ljh"]
+[sub_resource type="Shader" id="Shader_jb3fp"]
 code = "// NOTE: This UDIM Shader is automatically generated
 
 shader_type spatial;
@@ -138,9 +138,9 @@ void fragment() {
 }
 "
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ka5v6"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5ckcb"]
 render_priority = 0
-shader = SubResource("Shader_52ljh")
+shader = SubResource("Shader_jb3fp")
 shader_parameter/albedo = Color(1, 1, 1, 1)
 shader_parameter/point_size = 1.0
 shader_parameter/roughness = 1.0
@@ -185,7 +185,7 @@ disable_fog = false
 vertex_color_use_as_albedo = false
 vertex_color_is_srgb = false
 albedo_color = Color(1, 1, 1, 1)
-albedo_tileset = SubResource("Resource_rvq8g")
+albedo_tileset = SubResource("Resource_4yxbi")
 texture_force_srgb = false
 texture_msdf = false
 metallic = 0.0
@@ -252,4 +252,4 @@ alpha_antialiasing_mode = 0
 
 [node name="Cube" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 10.6016, 0, 0, 0, 12.2471, 0, 11.5026, 0)
-surface_material_override/0 = SubResource("ShaderMaterial_ka5v6")
+surface_material_override/0 = SubResource("ShaderMaterial_5ckcb")
