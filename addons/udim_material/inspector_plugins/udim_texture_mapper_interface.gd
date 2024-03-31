@@ -12,6 +12,8 @@ func _ready():
 func open_select_dialog():
 	var dialog = EditorFileDialog.new()
 	dialog.file_mode = EditorFileDialog.FILE_MODE_OPEN_FILE
+	dialog.size = Vector2(800, 600)
+	dialog.initial_position = Window.WINDOW_INITIAL_POSITION_CENTER_MAIN_WINDOW_SCREEN
 	dialog.file_selected.connect(udim_dir_selected)
 	add_child(dialog)
 	dialog.show()

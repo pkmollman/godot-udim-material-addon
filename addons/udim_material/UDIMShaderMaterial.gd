@@ -10,10 +10,21 @@ func int_to_str(int_str):
 		return "0" + str(int_str)
 	return str(int_str)
 
-# var update_next_frame: bool = false
 
-# func queue_update():
-# 	update_next_frame = true
+const IGNORED_PROPERTIES = [
+	"shader",
+	"use_custom_shader",
+]
+
+func _validate_property(property):
+	if property.name in IGNORED_PROPERTIES:
+		property.usage = PROPERTY_USAGE_NO_EDITOR
+
+## Allow using a custom shader script (Currently does nothing)
+@export() var use_custom_shader: bool = false:
+	set(new_value):
+		use_custom_shader = new_value
+		_update_shader()
 
 # transparancy
 @export_subgroup("Transparency")
