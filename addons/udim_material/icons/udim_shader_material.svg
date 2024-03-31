@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   viewBox="0 0 16 16"
+   width="16"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="UDIMShaderMaterial.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs33" />
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="45.387417"
+     inkscape:cx="6.2682572"
+     inkscape:cy="7.9096813"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="266"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg29" />
+  <linearGradient
+     x2="0"
+     y2="16"
+     gradientUnits="userSpaceOnUse"
+     id="a">
+    <stop
+       offset=".1875"
+       stop-color="#ff4545"
+       id="stop2" />
+    <stop
+       stop-color="#ffe345"
+       id="stop4" />
+    <stop
+       offset=".3125"
+       stop-color="#ffe345"
+       id="stop6" />
+    <stop
+       stop-color="#80ff45"
+       id="stop8" />
+    <stop
+       offset=".4375"
+       stop-color="#80ff45"
+       id="stop10" />
+    <stop
+       stop-color="#45ffa2"
+       id="stop12" />
+    <stop
+       offset=".5625"
+       stop-color="#45ffa2"
+       id="stop14" />
+    <stop
+       stop-color="#45d7ff"
+       id="stop16" />
+    <stop
+       offset=".6875"
+       stop-color="#45d7ff"
+       id="stop18" />
+    <stop
+       stop-color="#8045ff"
+       id="stop20" />
+    <stop
+       offset=".8125"
+       stop-color="#8045ff"
+       id="stop22" />
+    <stop
+       stop-color="#ff4596"
+       id="stop24" />
+  </linearGradient>
+  <path
+     d="M 1.93963,1.9844206 14,1.993184 v 11.998051 l -5.9688413,-0.0068 -6.0623174,0.0068 L 2,6.9318403 Z M 8,13.875366 V 8 l 5.127556,0.022395 m -10.5355404,3e-7 L 8.0155794,8 7.9610516,2.5082765 v 0 0"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="round"
+     stroke="url(#a)"
+     id="path27"
+     inkscape:label="path27"
+     sodipodi:nodetypes="ccccccccccccccc" />
+</svg>
