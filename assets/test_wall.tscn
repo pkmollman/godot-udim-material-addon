@@ -1,0 +1,255 @@
+[gd_scene load_steps=27 format=3 uid="uid://cjpluardf3038"]
+
+[ext_resource type="PackedScene" uid="uid://dmwg76q3mkqud" path="res://assets/test_wall.blend" id="1_01uo5"]
+[ext_resource type="Script" path="res://addons/udim_material/UDIMTextureTileset.gd" id="2_3jytj"]
+[ext_resource type="Texture2D" uid="uid://dt2de3fbytrpr" path="res://assets/test_wall_textures/albedo.1001.png" id="3_pqaql"]
+[ext_resource type="Texture2D" uid="uid://bev6thq8x8ca5" path="res://assets/test_wall_textures/albedo.1002.png" id="4_0c1c2"]
+[ext_resource type="Texture2D" uid="uid://bis3g47bsiks3" path="res://assets/test_wall_textures/albedo.1003.png" id="5_2cc2v"]
+[ext_resource type="Texture2D" uid="uid://bvxqcixhs6w5w" path="res://assets/test_wall_textures/albedo.1004.png" id="6_035op"]
+[ext_resource type="Texture2D" uid="uid://dr6m102tvygow" path="res://assets/test_wall_textures/albedo.1005.png" id="7_x21ms"]
+[ext_resource type="Texture2D" uid="uid://hyuy1iw15isa" path="res://assets/test_wall_textures/albedo.1006.png" id="8_qg6eh"]
+[ext_resource type="Texture2D" uid="uid://csq7ov56flaav" path="res://assets/test_wall_textures/albedo.1007.png" id="9_nyvib"]
+[ext_resource type="Script" path="res://addons/udim_material/UDIMShaderMaterial.gd" id="10_i17ci"]
+[ext_resource type="Texture2D" uid="uid://b2ob277jnpmwc" path="res://assets/test_wall_textures/albedo.1008.png" id="10_yfl2i"]
+[ext_resource type="Texture2D" uid="uid://ch1jmfqqerrh" path="res://assets/test_wall_textures/albedo.1009.png" id="11_ipimn"]
+[ext_resource type="Texture2D" uid="uid://cf1hcp1co6tms" path="res://assets/test_wall_textures/albedo.1010.png" id="12_i04g7"]
+[ext_resource type="Texture2D" uid="uid://h5q82wt44r18" path="res://assets/test_wall_textures/albedo.1011.png" id="13_p2dsj"]
+[ext_resource type="Texture2D" uid="uid://cqe47xxpfp5ue" path="res://assets/test_wall_textures/albedo.1012.png" id="14_c64dt"]
+[ext_resource type="Texture2D" uid="uid://xl1hotemnpxb" path="res://assets/test_wall_textures/albedo.1013.png" id="15_m5etp"]
+[ext_resource type="Texture2D" uid="uid://bl4moc3nhisfn" path="res://assets/test_wall_textures/albedo.1014.png" id="16_564ni"]
+[ext_resource type="Texture2D" uid="uid://cn657m5rqcy4t" path="res://assets/test_wall_textures/albedo.1015.png" id="17_2obwd"]
+[ext_resource type="Texture2D" uid="uid://cib7bvcqhyms1" path="res://assets/test_wall_textures/albedo.1016.png" id="18_u7vw1"]
+[ext_resource type="Texture2D" uid="uid://bakkdtktimnbl" path="res://assets/test_wall_textures/albedo.1017.png" id="19_7whtf"]
+[ext_resource type="Texture2D" uid="uid://d3wgq4d2bsjru" path="res://assets/test_wall_textures/albedo.1018.png" id="20_ignq0"]
+[ext_resource type="Texture2D" uid="uid://lbi3is2c1adr" path="res://assets/test_wall_textures/albedo.1019.png" id="21_2ntld"]
+[ext_resource type="Texture2D" uid="uid://cyeekg4i7omq4" path="res://assets/test_wall_textures/albedo.1020.png" id="22_3mgpj"]
+
+[sub_resource type="Resource" id="Resource_rvq8g"]
+script = ExtResource("2_3jytj")
+tile_1001 = ExtResource("3_pqaql")
+tile_1002 = ExtResource("4_0c1c2")
+tile_1003 = ExtResource("5_2cc2v")
+tile_1004 = ExtResource("6_035op")
+tile_1005 = ExtResource("7_x21ms")
+tile_1006 = ExtResource("8_qg6eh")
+tile_1007 = ExtResource("9_nyvib")
+tile_1008 = ExtResource("10_yfl2i")
+tile_1009 = ExtResource("11_ipimn")
+tile_1010 = ExtResource("12_i04g7")
+tile_1011 = ExtResource("13_p2dsj")
+tile_1012 = ExtResource("14_c64dt")
+tile_1013 = ExtResource("15_m5etp")
+tile_1014 = ExtResource("16_564ni")
+tile_1015 = ExtResource("17_2obwd")
+tile_1016 = ExtResource("18_u7vw1")
+tile_1017 = ExtResource("19_7whtf")
+tile_1018 = ExtResource("20_ignq0")
+tile_1019 = ExtResource("21_2ntld")
+tile_1020 = ExtResource("22_3mgpj")
+
+[sub_resource type="Shader" id="Shader_52ljh"]
+code = "// NOTE: This UDIM Shader is automatically generated
+
+shader_type spatial;
+render_mode blend_mix,depth_draw_opaque,cull_back,diffuse_burley,specular_schlick_ggx;
+uniform vec4 albedo : source_color;
+uniform sampler2D texture_albedo : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1001 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1002 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1003 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1004 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1005 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1006 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1007 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1008 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1009 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1010 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1011 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1012 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1013 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1014 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1015 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1016 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1017 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1018 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1019 : source_color,filter_nearest,repeat_enable;
+uniform sampler2D tile_1020 : source_color,filter_nearest,repeat_enable;
+uniform float point_size : hint_range(0,128);
+uniform float roughness : hint_range(0,1);
+uniform sampler2D texture_metallic : hint_default_white,filter_nearest,repeat_enable;
+uniform vec4 metallic_texture_channel;
+uniform sampler2D texture_roughness : hint_roughness_r,filter_nearest,repeat_enable;
+uniform float specular;
+uniform float metallic;
+uniform vec3 uv1_scale;
+uniform vec3 uv1_offset;
+uniform vec3 uv2_scale;
+uniform vec3 uv2_offset;
+
+
+vec4 map_to_udim_tile(sampler2D sampler, vec2 uv, vec2 x_thresholds, vec2 y_thresholds) {
+	bvec2 ltx = lessThan(vec2(uv.x,uv.x), x_thresholds);
+	bvec2 gtx = greaterThan(vec2(uv.x,uv.x), x_thresholds);
+	bvec2 lty = lessThan(vec2(uv.y,uv.y), y_thresholds);
+	bvec2 gty = greaterThan(vec2(uv.y,uv.y), y_thresholds);
+	vec4 f_tex0x = texture(sampler,uv) * float((int(ltx.y) * int(gtx.x)) * (int(lty.y) * int(gty.x)));
+	f_tex0x.a = 1.0;
+	return f_tex0x;
+}
+
+
+void vertex() {
+}
+
+
+
+
+void fragment() {
+	vec2 base_uv = UV;
+	vec4 f_tile_1001 = map_to_udim_tile(tile_1001,base_uv,vec2(0,1),vec2(0,1));
+	vec4 f_tile_1002 = map_to_udim_tile(tile_1002,base_uv,vec2(1,2),vec2(0,1));
+	vec4 f_tile_1003 = map_to_udim_tile(tile_1003,base_uv,vec2(2,3),vec2(0,1));
+	vec4 f_tile_1004 = map_to_udim_tile(tile_1004,base_uv,vec2(3,4),vec2(0,1));
+	vec4 f_tile_1005 = map_to_udim_tile(tile_1005,base_uv,vec2(4,5),vec2(0,1));
+	vec4 f_tile_1006 = map_to_udim_tile(tile_1006,base_uv,vec2(5,6),vec2(0,1));
+	vec4 f_tile_1007 = map_to_udim_tile(tile_1007,base_uv,vec2(6,7),vec2(0,1));
+	vec4 f_tile_1008 = map_to_udim_tile(tile_1008,base_uv,vec2(7,8),vec2(0,1));
+	vec4 f_tile_1009 = map_to_udim_tile(tile_1009,base_uv,vec2(8,9),vec2(0,1));
+	vec4 f_tile_1010 = map_to_udim_tile(tile_1010,base_uv,vec2(9,10),vec2(0,1));
+	vec4 f_tile_1011 = map_to_udim_tile(tile_1011,base_uv,vec2(0,1),vec2(-1,0));
+	vec4 f_tile_1012 = map_to_udim_tile(tile_1012,base_uv,vec2(1,2),vec2(-1,0));
+	vec4 f_tile_1013 = map_to_udim_tile(tile_1013,base_uv,vec2(2,3),vec2(-1,0));
+	vec4 f_tile_1014 = map_to_udim_tile(tile_1014,base_uv,vec2(3,4),vec2(-1,0));
+	vec4 f_tile_1015 = map_to_udim_tile(tile_1015,base_uv,vec2(4,5),vec2(-1,0));
+	vec4 f_tile_1016 = map_to_udim_tile(tile_1016,base_uv,vec2(5,6),vec2(-1,0));
+	vec4 f_tile_1017 = map_to_udim_tile(tile_1017,base_uv,vec2(6,7),vec2(-1,0));
+	vec4 f_tile_1018 = map_to_udim_tile(tile_1018,base_uv,vec2(7,8),vec2(-1,0));
+	vec4 f_tile_1019 = map_to_udim_tile(tile_1019,base_uv,vec2(8,9),vec2(-1,0));
+	vec4 f_tile_1020 = map_to_udim_tile(tile_1020,base_uv,vec2(9,10),vec2(-1,0));
+	vec4 albedo_tex = f_tile_1001+f_tile_1002+f_tile_1003+f_tile_1004+f_tile_1005+f_tile_1006+f_tile_1007+f_tile_1008+f_tile_1009+f_tile_1010+f_tile_1011+f_tile_1012+f_tile_1013+f_tile_1014+f_tile_1015+f_tile_1016+f_tile_1017+f_tile_1018+f_tile_1019+f_tile_1020;
+	albedo_tex.a = 1.0;
+	ALBEDO = albedo.rgb * albedo_tex.rgb;
+	float metallic_tex = dot(texture(texture_metallic,base_uv),metallic_texture_channel);
+	METALLIC = metallic_tex * metallic;
+	vec4 roughness_texture_channel = vec4(1.0,0.0,0.0,0.0);
+	float roughness_tex = dot(texture(texture_roughness,base_uv),roughness_texture_channel);
+	ROUGHNESS = roughness_tex * roughness;
+	SPECULAR = specular;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ka5v6"]
+render_priority = 0
+shader = SubResource("Shader_52ljh")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = null
+shader_parameter/metallic = 0.0
+shader_parameter/uv1_scale = null
+shader_parameter/uv1_offset = null
+shader_parameter/uv2_scale = null
+shader_parameter/uv2_offset = null
+shader_parameter/tile_1001 = ExtResource("3_pqaql")
+shader_parameter/tile_1002 = ExtResource("4_0c1c2")
+shader_parameter/tile_1003 = ExtResource("5_2cc2v")
+shader_parameter/tile_1004 = ExtResource("6_035op")
+shader_parameter/tile_1005 = ExtResource("7_x21ms")
+shader_parameter/tile_1006 = ExtResource("8_qg6eh")
+shader_parameter/tile_1007 = ExtResource("9_nyvib")
+shader_parameter/tile_1008 = ExtResource("10_yfl2i")
+shader_parameter/tile_1009 = ExtResource("11_ipimn")
+shader_parameter/tile_1010 = ExtResource("12_i04g7")
+shader_parameter/tile_1011 = ExtResource("13_p2dsj")
+shader_parameter/tile_1012 = ExtResource("14_c64dt")
+shader_parameter/tile_1013 = ExtResource("15_m5etp")
+shader_parameter/tile_1014 = ExtResource("16_564ni")
+shader_parameter/tile_1015 = ExtResource("17_2obwd")
+shader_parameter/tile_1016 = ExtResource("18_u7vw1")
+shader_parameter/tile_1017 = ExtResource("19_7whtf")
+shader_parameter/tile_1018 = ExtResource("20_ignq0")
+shader_parameter/tile_1019 = ExtResource("21_2ntld")
+shader_parameter/tile_1020 = ExtResource("22_3mgpj")
+script = ExtResource("10_i17ci")
+use_custom_shader = false
+transparency = 0
+blend_mode = 0
+cull_mode = 0
+depth_draw_mode = 0
+shading_mode = 1
+diffuse_mode = 0
+specular_mode = 0
+disable_ambient_light = false
+disable_fog = false
+vertex_color_use_as_albedo = false
+vertex_color_is_srgb = false
+albedo_color = Color(1, 1, 1, 1)
+albedo_tileset = SubResource("Resource_rvq8g")
+texture_force_srgb = false
+texture_msdf = false
+metallic = 0.0
+metallic_specular = 0.5
+metallic_texture_channel = 0
+roughness = 1.0
+roughness_texture_channel = 0
+emission_enabled = false
+emission_color = Color(0, 0, 0, 1)
+emission_multiplier = 1.0
+emission_op = 0
+emission_on_uv2 = false
+normal_enabled = false
+normal_scale = 1.0
+rim_enabled = false
+rim = 1.0
+rim_tint = 0.5
+clearcoat_enabled = false
+clearcoat = 1.0
+clearcoat_roughness = 0.5
+anisotropy_enabled = false
+anisotropy = 0.0
+ao_enabled = false
+ao_light_effect = 0.0
+ao_on_uv2 = false
+ao_texture_channel = 0
+heightmap_enabled = false
+heightmap_scale = 5.0
+heightmap_deep_parallax = false
+heightmap_flip_tangent = false
+heightmap_flip_binormal = false
+heightmap_flip_texture = false
+subsurf_scatter_enabled = false
+subsurf_scatter_strength = 0.0
+subsurf_scatter_skin_mode = false
+subsurf_scatter_transmittance_enabled = false
+subsurf_scatter_transmittance_depth = 0.1
+subsurf_scatter_transmittance_boost = 0.0
+backlight_enabled = false
+backlight_backlight = Color(0, 0, 0, 1)
+refraction_enabled = false
+refraction_scale = 0.05
+refraction_texture_channel = 0
+detail_enabled = false
+detail_blend_mode = 0
+detail_uv = 0
+texture_filter = 0
+texture_repeat = true
+disable_receive_shadows = false
+shadow_to_opacity = false
+billboard_mode = 0
+grow_enabled = false
+grow_amount = 0.0
+fixed_size = false
+use_point_size = false
+point_size = 1.0
+use_particle_trails = false
+proximity_fade_enabled = false
+proximity_fade_distance = 1.0
+distance_fade = 0
+alpha_antialiasing_mode = 0
+
+[node name="test_wall" instance=ExtResource("1_01uo5")]
+
+[node name="Cube" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 10.6016, 0, 0, 0, 12.2471, 0, 11.5026, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_ka5v6")

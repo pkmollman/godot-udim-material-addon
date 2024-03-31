@@ -631,6 +631,7 @@ func _update_shader_params():
 	set_shader_parameter("point_size", point_size)
 	set_shader_parameter("grow", grow_amount)
 	set_shader_parameter("proximity_fade_distance", proximity_fade_distance)
+	set_shader
 
 
 func _update_shader():
