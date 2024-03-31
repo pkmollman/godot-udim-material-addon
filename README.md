@@ -1,3 +1,4 @@
+<img src="udim_shader_material_addon_icon.png" width="80" />
 # UDIM Shader Material for Godot
 
 ### Blender Model with UDIM Tile Material
